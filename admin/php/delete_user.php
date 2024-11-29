@@ -1,7 +1,7 @@
 <?php
 // delete_user.php
 session_start();
-$conn = new mysqli("localhost", "citi_lgutestdb1", "GGpfr89ly9h6qJF7", "citi_lgutestdb");
+$conn = new mysqli("localhost", "root", "", "lgutestdb");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['user_email']; // Use email as the identifier
